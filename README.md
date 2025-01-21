@@ -9,8 +9,8 @@
 First, create new project with the following command:
 
 ```bash
-mkdir express-typescript-tutorial
-cd express-typescript-tutorial
+mkdir express-typescript-simple-starter
+cd express-typescript-simple-starter
 npm init -y
 ```
 
@@ -21,7 +21,7 @@ npm i express@^5.0.1 cors morgan helmet ts-patch typescript-transform-paths helm
 npm i typescript ts-node eslint @types/express @types/node @types/morgan @types/cors @eslint/js -D
 ```
 
-## Step 3: Setup TypeScript
+## Step 3: Configure TypeScript
 
 To initialize TypeScript, run this command:
 
@@ -99,7 +99,7 @@ export default [
 Create a new file named **.env** with the following content:
 
 ```bash
-APP_ORIGIN=http://localhost:5173 # The URL of your app
+APP_ORIGIN=http://localhost:5173 # The URL of your frontend app
 PORT=3000 # The port your Express app is running on
 NODE_ENV=development # Set to "production" in a production environment
 ```
@@ -182,6 +182,7 @@ Visit `http://localhost:3000` in your browser, and you should see _Hello, from E
 ## Final project structure
 
 ```css
+express-typescript-simple-starter
 ├── src
 │   ├── lib
 │   │   └── env.ts
@@ -194,11 +195,4 @@ Visit `http://localhost:3000` in your browser, and you should see _Hello, from E
 ├── package-lock.json
 ├── package.json
 └── tsconfig.json
-```
-
-To import modules with path alias, you can use the following code:
-
-```ts
-import <module_name> from '@/module_name'; // recommended
-import <module_name> from '../../../module_name'; // not recommended
 ```

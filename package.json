@@ -1,8 +1,8 @@
 {
   "name": "express-typescript-simple-starter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple starter for Express with TypeScript.",
+  "main": "src/server.ts",
   "scripts": {
     "build": "tsc --build",
     "start": "node ./dist/server.js",
